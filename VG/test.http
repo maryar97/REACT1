@@ -1,0 +1,15 @@
+GET http://127.0.0.1:8000/api/clients 
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/api/clients 
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nom": "tutu",
+    "prenom": "tutu"
+}
+
+
