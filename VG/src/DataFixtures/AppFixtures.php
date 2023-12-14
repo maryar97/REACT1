@@ -16,13 +16,13 @@ class AppFixtures extends Fixture
 
 
         $client1 = new Client();
-        $client1->setNom('toto')
-            ->setPrenom('tata');
+        $client1->setNom('Galbiati')
+            ->setPrenom('Yvette');
             $manager->persist($client1);
 
         $client2 = new Client();
-        $client2->setNom('toto')
-            ->setPrenom('tata');
+        $client2->setNom('Dro')
+            ->setPrenom('laure');
             $manager->persist($client2);
 
             $manager->flush();
