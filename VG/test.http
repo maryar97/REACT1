@@ -12,4 +12,12 @@ Accept: application/json
     "prenom": "tutu"
 }
 
+###
 
+DELETE http://127.0.0.1:8000/api/clients/4
+
+
+###
+
+PUT http://127.0.0.1:8000/api/clients/7
+Content-Type: application/json
