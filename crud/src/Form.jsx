@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Form() {
+function Form(props) {
 
   const [nom, setNom] = useState("")
   const [prenom, setPrenom] = useState("")
@@ -20,10 +20,11 @@ function Form() {
       },
       body: JSON.stringify({nom, prenom})
     })
-    .then((reponse)=>{ console.log (reponse) })
+    .then((reponse)=>{
+      console.log (reponse) 
+      props.onChange()
+    })
 }
-
-
 
   return (
     <div>
