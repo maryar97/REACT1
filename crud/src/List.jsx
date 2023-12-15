@@ -20,7 +20,7 @@ function List() {
         {
           Liste.map((client) => (
             <div> 
-              {client.nom} - {client.prenom}
+              {client.nom}  {client.prenom}
             </div>
 
           ))

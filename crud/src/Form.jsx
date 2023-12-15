@@ -13,8 +13,16 @@ function Form() {
   }
 
   const handleClick = () => {
+    fetch("https://127.0.0.1:8000/api/clients", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({nom, prenom})
+    })
+    .then((reponse)=>{ console.log (reponse) })
+}
 
-  }
 
 
   return (
