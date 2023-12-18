@@ -1,4 +1,9 @@
+import listState from "./recoil";
+import { useRecoilValue } from "recoil";
 function List(props) {
+
+  const liste = useRecoilValue(listState);
+
   
   return (
     <div>
